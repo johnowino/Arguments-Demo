@@ -95,14 +95,14 @@
         <InArgument x:TypeArguments="x:Int32" x:Key="inY">
           <VisualBasicValue x:TypeArguments="x:Int32" ExpressionText="Y" />
         </InArgument>
-        <InArgument x:TypeArguments="x:Int32" x:Key="inX">
-          <VisualBasicValue x:TypeArguments="x:Int32" ExpressionText="X" />
-        </InArgument>
         <OutArgument x:TypeArguments="x:Int32" x:Key="outResult">
           <VisualBasicReference x:TypeArguments="x:Int32" ExpressionText="Area" />
         </OutArgument>
+        <InOutArgument x:TypeArguments="x:Int32" x:Key="ioX">
+          <VisualBasicReference x:TypeArguments="x:Int32" ExpressionText="X" />
+        </InOutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="388,85" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[Area]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="388,85" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[X]" />
   </Sequence>
 </Activity>
